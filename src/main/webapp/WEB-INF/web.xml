@@ -1,0 +1,114 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         id="WebApp_ID" version="3.0">
+    <display-name>Restaurant</display-name>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>servlet</servlet-name>
+        <servlet-class>controller.Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+        <url-pattern>/profile</url-pattern>
+        <url-pattern>/reg</url-pattern>
+        <url-pattern>/logout</url-pattern>
+        <url-pattern>/viewcart</url-pattern>
+        <url-pattern>/cart</url-pattern>
+        <url-pattern>/regview</url-pattern>
+        <url-pattern>/updatequantity</url-pattern>
+        <url-pattern>/back</url-pattern>
+        <url-pattern>/finish_order</url-pattern>
+        <url-pattern>/do_another_order</url-pattern>
+        <url-pattern>/admin</url-pattern>
+        <url-pattern>/admin_login</url-pattern>
+        <url-pattern>/view_all_customers</url-pattern>
+        <url-pattern>/view_all_orders</url-pattern>
+        <url-pattern>/logout_admin</url-pattern>
+        <url-pattern>/confirm_order</url-pattern>
+        <url-pattern>/remove_product</url-pattern>
+        <url-pattern>/chooseLanguage</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>SessionTimeoutFilter</filter-name>
+        <filter-class>filter.SessionTimeoutFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SessionTimeoutFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/remove_product</url-pattern>
+        <url-pattern>/confirm_order</url-pattern>
+        <url-pattern>/logout_admin</url-pattern>
+        <url-pattern>/view_all_orders</url-pattern>
+        <url-pattern>/view_all_customers</url-pattern>
+        <url-pattern>/do_another_order</url-pattern>
+        <url-pattern>/finish_order</url-pattern>
+        <url-pattern>/back</url-pattern>
+        <url-pattern>/updatequantity</url-pattern>
+        <url-pattern>/cart</url-pattern>
+        <url-pattern>/viewcart</url-pattern>
+        <url-pattern>/regview</url-pattern>
+        <url-pattern>/profile</url-pattern>
+    </filter-mapping>
+
+
+    <filter>
+        <filter-name>setCharFilter</filter-name>
+        <filter-class>filter.SetCharFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>setCharFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+    <!--    <context-param>
+            <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+            <param-value>property.messages</param-value>
+        </context-param>
+        <jsp-config>
+            <jsp-property-group>
+                <url-pattern>/*</url-pattern>
+                <page-encoding>UTF-8</page-encoding>
+            </jsp-property-group>
+        </jsp-config>-->
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/view/error404.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/WEB-INF/view/exception.jsp</location>
+    </error-page>
+
+    <!--    <servlet-mapping>
+            <servlet-name>default</servlet-name>
+            <url-pattern>*.css</url-pattern>
+            <url-pattern>*.js</url-pattern>
+            <url-pattern>*.png</url-pattern>
+        </servlet-mapping>-->
+
+</web-app>

@@ -1,0 +1,5 @@
+package page;
+
+public enum Page {
+    INDEX, MENU, REG, PROFILE, CART, EROR404, VIEWCART, FINISH_ORDER, ADMIN, ADMIN_CONSOLE
+}

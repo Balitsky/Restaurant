@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="restaurant@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="restaurant">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="daotalk"/>
+    <schema id="4" parent="1" name="database"/>
+    <schema id="5" parent="1" name="information_schema"/>
+    <schema id="6" parent="1" name="mysql"/>
+    <schema id="7" parent="1" name="performance_schema"/>
+    <schema id="8" parent="1" name="sys"/>
+    <schema id="9" parent="1" name="user"/>
+    <table id="10" parent="2" name="account_product"/>
+    <table id="11" parent="2" name="admin"/>
+    <table id="12" parent="2" name="category"/>
+    <table id="13" parent="2" name="customer"/>
+    <table id="14" parent="2" name="order"/>
+    <table id="15" parent="2" name="product"/>
+    <column id="16" parent="10" name="id_account_product">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="17" parent="10" name="id_product">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="18" parent="10" name="quantity">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="19" parent="10" name="id_order">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="20" parent="10" name="account_product_order_id_order_fk">
+      <ColNames>id_order</ColNames>
+    </index>
+    <index id="21" parent="10" name="account_product_product_id_product_fk">
+      <ColNames>id_product</ColNames>
+    </index>
+    <key id="22" parent="10" name="PRIMARY">
+      <ColNames>id_account_product</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="23" parent="10" name="account_product_product_id_product_fk">
+      <ColNames>id_product</ColNames>
+      <RefSchemaName>restaurant</RefSchemaName>
+      <RefTableName>product</RefTableName>
+      <RefColNames>id_product</RefColNames>
+    </foreign-key>
+    <foreign-key id="24" parent="10" name="account_product_order_id_order_fk">
+      <ColNames>id_order</ColNames>
+      <RefSchemaName>restaurant</RefSchemaName>
+      <RefTableName>order</RefTableName>
+      <RefColNames>id_order</RefColNames>
+    </foreign-key>
+    <column id="25" parent="11" name="id_admin">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="26" parent="11" name="login">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="27" parent="11" name="password">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="28" parent="11" name="PRIMARY">
+      <ColNames>id_admin</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="29" parent="12" name="id_category">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="30" parent="12" name="name">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="31" parent="12" name="PRIMARY">
+      <ColNames>id_category</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="32" parent="13" name="id_customer">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="33" parent="13" name="login">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="34" parent="13" name="password">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="35" parent="13" name="email">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="36" parent="13" name="phone">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="37" parent="13" name="PRIMARY">
+      <ColNames>id_customer</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="38" parent="14" name="id_order">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="39" parent="14" name="total">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="40" parent="14" name="id_customer">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="41" parent="14" name="confirm">
+      <Position>4</Position>
+      <DataType>bit(1)|0</DataType>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+    </column>
+    <index id="42" parent="14" name="order_customer_id_customer_fk">
+      <ColNames>id_customer</ColNames>
+    </index>
+    <key id="43" parent="14" name="PRIMARY">
+      <ColNames>id_order</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="44" parent="14" name="order_customer_id_customer_fk">
+      <ColNames>id_customer</ColNames>
+      <RefSchemaName>restaurant</RefSchemaName>
+      <RefTableName>customer</RefTableName>
+      <RefColNames>id_customer</RefColNames>
+    </foreign-key>
+    <column id="45" parent="15" name="id_product">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="46" parent="15" name="name">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="47" parent="15" name="amount">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="48" parent="15" name="price">
+      <Position>4</Position>
+      <DataType>decimal(10)|0</DataType>
+    </column>
+    <column id="49" parent="15" name="id_category">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="50" parent="15" name="id_UNIQUE">
+      <ColNames>id_product</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="51" parent="15" name="name_UNIQUE">
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="52" parent="15" name="product_category_id_category_fk">
+      <ColNames>id_category</ColNames>
+    </index>
+    <key id="53" parent="15" name="PRIMARY">
+      <ColNames>id_product</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="54" parent="15" name="id_UNIQUE">
+      <ColNames>id_product</ColNames>
+      <UnderlyingIndexName>id_UNIQUE</UnderlyingIndexName>
+    </key>
+    <key id="55" parent="15" name="name_UNIQUE">
+      <ColNames>name</ColNames>
+      <UnderlyingIndexName>name_UNIQUE</UnderlyingIndexName>
+    </key>
+    <foreign-key id="56" parent="15" name="product_category_id_category_fk">
+      <ColNames>id_category</ColNames>
+      <RefSchemaName>restaurant</RefSchemaName>
+      <RefTableName>category</RefTableName>
+      <RefColNames>id_category</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>

@@ -1,0 +1,626 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #3b1112;
+}
+
+.button {
+	width: 80px;
+}
+
+#menu_item {
+	width: 1%;
+}
+
+.bubble {
+	font-weight: bold;
+	background-color: #BF5656;
+	color: inherit;
+	border-radius: 7px;
+	padding: 5px;
+	padding-left: 12px;
+}
+
+.href {
+	padding-left: 12px;
+}
+
+#admin_info {
+	font-size: 20px;
+}
+
+.tab {
+	border-collapse: collapse;
+	background: -moz-linear-gradient(top, #441414 0%, #661E1E);
+	background: -webkit-gradient(linear, left top, left bottom, from(#661E1E),
+		to(#661E1E) );
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border-collapse: collapse;
+	border: 0px;
+	color: #DC7947;
+}
+
+.tab tr td {
+	padding: 10px;
+	text-align: center;
+}
+
+.tab1 {
+	border-collapse: collapse;
+	background: -moz-linear-gradient(top, #441414 0%, #661E1E);
+	background: -webkit-gradient(linear, left top, left bottom, from(#661E1E),
+		to(#661E1E) );
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border-collapse: collapse;
+	border: 0px;
+	color: #DC7947;
+}
+
+.tab1 tr td {
+	padding: 6px;
+	text-align: center;
+}
+
+.greenbutton {
+	background: -moz-linear-gradient(top, #E9FFEF 0%, #E9FFEF);
+	background: -webkit-gradient(linear, left top, left bottom, from(#E9FFEF),
+		to(#E9FFEF) );
+	width: 70px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 0px;
+}
+
+.redbutton {
+	background: -moz-linear-gradient(top, #FACDCD 0%, #FACDCD);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FACDCD),
+		to(#FACDCD) );
+	width: 70px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 0px;
+	margin-top: 3px;
+}
+
+.areatext {
+	background-color: #E9FFEF;
+	border-radius: 4px;
+	border: 0px;
+	padding: 3px 0;
+	padding-left: 5px;
+	width: 50px;
+}
+
+#back {
+	padding-top: 20px;
+	margin-left: 100px;
+}
+
+#lang {
+	width: 100px;
+	position: relative;
+	top: 15px;
+	left: 15px;
+	color: red;
+	background-color: #441414;
+	-moz-border-radius: 5px; /* Для Firefox 3 */
+	-webkit-border-radius: 5px; /* Для Safari 4 и Chrome */
+	border-radius: 5px;
+	color: red;
+	padding: 10px;
+	position: relative;
+}
+
+#meat {
+	position: relative;
+	left: 60px;
+	top: -30px;
+}
+
+#beer {
+	position: relative;
+	left: 45px;
+	top: -30px;
+}
+
+#fruits {
+	position: relative;
+	left: 60px;
+	top: -30px;
+}
+
+.flag {  position: relative;
+	right: 35px;
+	top: -30px;
+	margin-bot: 0px;
+	
+}
+
+#goback {
+	position: relative;
+	top: -420px;
+	font-size: 20px;
+	left: 70px;
+}
+
+#backtomenu {
+	margin-top: -110px;
+	margin-left: 30px;
+}
+
+#backtomenu2 {
+	margin-left: 80px;
+}
+
+#footer {
+	font-size: 16px;
+	color: #3a1113;
+	text-align: center;
+	clear: both;
+}
+
+#confirm_msg {
+	color: #D0E8BB;
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+
+#main {
+	margin: 0 auto;
+	width: 800px;
+	padding: 0;
+	color: #f9bb12;
+}
+
+#error {
+	margin-top: 50px;
+}
+
+#button1 {
+	width: 200px;
+}
+
+h1 {
+	color: #f9bb12;
+	padding-bottom: 10px;
+	padding: 20px;
+	padding-top: 10px;
+	font-size: 30px;
+	font-family: Verdana;
+	position: relative;
+	top: -470px;
+}
+
+#finish_order {
+	color: #D0E8BB;
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 20px;
+	color: #f04f4a;
+}
+
+#form h2 {
+	position: relative;
+	top: 40px;
+	left: -50px;
+}
+
+#NAP {
+	position: relative;
+	font-size: 20px;
+	color: #f04f4a;
+	right: 100px;
+}
+
+#logo {
+	position: relative;
+	margin-left: 600px;
+	margin-top: 20px;
+	width: 822px;
+}
+
+#form {
+	font-size: 20px;
+	position: relative;
+	top: -490px;
+	left: 150px;
+	right: 100px;
+}
+
+#form_error p {
+	font-size: 20px;
+	position: relative;
+	top: -470px;
+	left: 150px;
+	right: 100px;
+	color: red;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#form2 {
+	font-size: 20px;
+	position: relative;
+	top: -490px;
+	left: 100px;
+	right: 100px;
+}
+
+#sum {
+	position: relative;
+	left: 45px;
+	top: -35px;
+	color: #f04f4a;
+	font-size: 22px;
+}
+
+#fin_but {
+	position: relative;
+	top: -30px;
+	left: 15px;
+}
+
+#viewprofile {
+	font-size: 20px;
+	position: relative;
+	top: -450px;
+	left: 70px;
+}
+
+#confirm_button {
+	width: 60px;
+}
+
+#form1 {
+	margin-top: -70px;
+	font-size: 20px;
+	position: relative;
+	top: -460px;
+	left: 60px;
+}
+
+#profile {
+	position: relative;
+	top: 120px;
+	right: 300px;
+	padding: 10px;
+	width: 100px;
+	color: yellow;
+	background-color: #441414;
+	-moz-border-radius: 5px; /* Для Firefox 3 */
+	-webkit-border-radius: 5px; /* Для Safari 4 и Chrome */
+	border-radius: 5px; /* Для современных браузеров */
+}
+
+#profile_admin {
+	position: relative;
+	top: 20px;
+	right: 450px;
+	padding: 10px;
+	width: 120px;
+	color: red;
+	background-color: #441414;
+	-moz-border-radius: 5px; /* Для Firefox 3 */
+	-webkit-border-radius: 5px; /* Для Safari 4 и Chrome */
+	border-radius: 5px; /* Для современных браузеров */
+}
+
+#cart_info {
+	color: #D3E8E6;
+}
+
+#enter p {
+	margin-left: 50px;
+	size: 100px;
+}
+
+.button1 {
+	width: 115px;
+}
+
+#button {
+	font-size: 14px;
+	margin-top: 5px;
+	padding: 3px 20px;
+}
+
+#login {
+	margin-left: 35px;
+	width: 142px;
+}
+
+#password {
+	width: 142px;
+}
+
+#total {
+	color: #f04f4a;
+	position: relative;
+	top: -80px;
+	font-size: 20px;
+	font-family: Verdana;
+	right: 100px;
+}
+
+#reg {
+	position: relative;
+	left: 90px;
+	top: -23px;
+	color: #9F2C9A;
+}
+
+#profile_info {
+	color: yellow;
+}
+
+#checkout {
+	margin-left: 70px;
+	margin-top: -21px;
+}
+
+#form p {
+	color: #f04f4a;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#regres {
+	position: relative;
+	left: 30px;
+	top: 15px;
+}
+
+#menu {
+	position: relative;
+	top: -30px;
+	font-size: 20px;
+	right: 100px;
+}
+
+#menu_cart {
+	position: relative;
+	top: -130px;
+	font-size: 20px;
+	right: 100px;
+}
+
+#bucket {
+	margin-top: 30px;
+	position: relative;
+	top: -20px;
+	right: 100px;
+	position: relative;
+	background-color: #441414;
+	-moz-border-radius: 5px; /* Для Firefox 3 */
+	-webkit-border-radius: 5px; /* Для Safari 4 и Chrome */
+	border-radius: 5px; /* Для современных браузеров */
+	padding: 20px;
+	width: 165px;
+}
+
+#fin {
+	position: relative;
+	top: -117px;
+	left: 150px;
+	background-color: #441414;
+	-moz-border-radius: 5px; /* Для Firefox 3 */
+	-webkit-border-radius: 5px; /* Для Safari 4 и Chrome */
+	border-radius: 5px; /* Для современных браузеров */
+	padding: 20px;
+	width: 160px;
+	height: 80px;
+}
+
+#hello {
+	position: relative;
+	top: -50px;
+}
+
+.accordion {
+	font-size: 14px;
+	color: #661E1E;
+	width: 300px;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(top, #441414 0%, #661E1E);
+	background: -webkit-gradient(linear, left top, left bottom, from(#661E1E),
+		to(#661E1E) );
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.accordion h3 {
+	padding: 7px 20px;
+	margin: 0;
+	border-bottom: none;
+	cursor: pointer;
+	color: #C2A273;
+	font-size: 24px;
+	border-bottom: none;
+	height: 50px;
+}
+
+.accordion h3:hover {
+	color: #C37602;
+}
+
+#admin_console {
+	position: relative;
+	top: 30px;
+	background-color: #441414;
+	-moz-border-radius: 5px; /* Для Firefox 3 */
+	-webkit-border-radius: 5px; /* Для Safari 4 и Chrome */
+	border-radius: 5px; /* Для современных браузеров */
+	width: 300px;
+	padding: 10px;
+	padding-left: 40px;
+}
+
+.accordion h3.active {
+	display: inline-block;
+	background-color: #8D2C2C;
+	border-radius: 7px 7px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 17px 17px 0 0;
+	top: 10px;
+	color: #C37602;
+	position: relative;
+	width: 110px;
+	height: 40px;
+}
+
+.accordion .content {
+	background: #8D2C2C;
+	margin: 0;
+	font-size: 22px;
+	padding: 10px 15px 20px;
+	color: #7DCCC6;
+	display: none;
+	padding: 10px 15px 20px;
+	border-radius: 5px;
+}
+
+.css3button {
+	font-size: 14px;
+	color: #FFE59B;
+	padding: 3px 20px;
+	margin-top: 10px;
+	background: -moz-linear-gradient(top, #ed312b 0%, #612527);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ed312b),
+		to(#612527) );
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 0;
+	cursor: pointer;
+}
+
+.css3button1 {
+	font-size: 14px;
+	color: #FFE59B;
+	width: 100px;
+	margin-top: 10px;
+	background: -moz-linear-gradient(top, #ed312b 0%, #612527);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ed312b),
+		to(#612527) );
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 0;
+	cursor: pointer;
+}
+
+.css3button3 {
+	font-size: 14px;
+	color: #FFE59B;
+	width: 125px;
+	margin-top: 10px;
+	background: -moz-linear-gradient(top, #ed312b 0%, #612527);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ed312b),
+		to(#612527) );
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 0;
+	cursor: pointer;
+	padding: 3px 7px;
+}
+
+.css3login {
+	font-size: 14px;
+	margin-top: 10px;
+	color: black;
+	padding: 2px 10px;
+	border-radius: 5px;
+	border: 1px solid #3B1112;
+}
+
+.css3password {
+	font-size: 14px;
+	margin-top: 10px;
+	color: black;
+	padding: 2px 10px;
+	border-radius: 5px;
+	border: 1px solid #3B1112;
+}
+
+.headerWidget {
+	width: 50px;
+	line-height: 25px;
+	position: relative;
+	top: 20px;
+	left: 30px;
+	background-color: #441414;
+	font-size: 16px;
+	color: red;
+	-moz-border-radius: 5px; /* Для Firefox 3 */
+	-webkit-border-radius: 5px; /* Для Safari 4 и Chrome */
+	border-radius: 5px;
+	padding: 10px;
+	padding-left: 15px;
+	line-height: 25px;
+}
+
+.css3button2 {
+	font-size: 12px;
+	color: #247C74;
+	padding: 1px 3px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFC2C2),
+		to(#FFC2C2) );
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	border: 0;
+	cursor: pointer;
+}
+
+#la {
+	position: relative;
+	top: 55px;
+	left: -90px;
+	width: 100px;
+}
+
+#pa {
+	position: relative;
+	right: 100px;
+	top: 65px;
+	left: -90px;
+	width: 50px;
+}
+
+#l {
+	position: relative;
+	left: -100px;
+	top: 57px;
+	width: 20px;
+	font-size: 22px;
+}
+
+#p {
+	position: relative;
+	left: -100px;
+	top: 65px;
+	width: 20px;
+	font-size: 22px;
+}
+
+a {
+	color: #935baa;
+	text-decoration: none;
+}
+
+a:hover {
+	position: relative;
+	top: 3px;
+}
