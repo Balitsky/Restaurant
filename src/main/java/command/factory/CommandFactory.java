@@ -6,8 +6,7 @@ import command.customer.LogoutCommand;
 import command.customer.ProfileCommand;
 import command.customer.RegCommand;
 import command.order.*;
-import command.service.Command;
-import command.service.ErrorCommand;
+import command.Command;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Collections;
@@ -26,7 +25,6 @@ public class CommandFactory {
         tempMap.put("/logout", new LogoutCommand());
         tempMap.put("/cart", new CartCommand());
         tempMap.put("/viewcart", new ViewCartCommand());
-        tempMap.put("/error", new ErrorCommand());
         tempMap.put("/updatequantity", new UpdateQuantityCommand());
         tempMap.put("/finish_order", new FinishOrderCommand());
         tempMap.put("/do_another_order", new DoAnotherOrderCommand());

@@ -1,6 +1,6 @@
 package command.order;
 
-import command.service.Command;
+import command.Command;
 import model.Order;
 import model.Product;
 import page.Page;

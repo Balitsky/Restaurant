@@ -1,10 +1,6 @@
 package command.customer;
 
-import command.service.Command;
-import dao.factories.CategoryDao;
-import dao.factories.CustomerDao;
-import dao.factories.DaoFactory;
-import dao.mysqlFactories.MySQLFactory;
+import command.Command;
 import model.Category;
 import model.Customer;
 import page.Page;

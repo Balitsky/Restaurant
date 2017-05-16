@@ -1,9 +1,6 @@
 package command.order;
 
-import command.service.Command;
-import dao.factories.CategoryDao;
-import dao.factories.DaoFactory;
-import dao.mysqlFactories.MySQLFactory;
+import command.Command;
 import model.Category;
 import page.Page;
 import service.ServiceFactory;

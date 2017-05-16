@@ -1,6 +1,6 @@
 package command.order;
 
-import command.service.Command;
+import command.Command;
 import page.Page;
 
 import javax.servlet.http.HttpServletRequest;
