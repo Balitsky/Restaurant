@@ -1,6 +1,5 @@
 package service;
 
-import dao.factories.DaoFactory;
 import dao.mysqlFactories.MySQLFactory;
 import model.Product;
 
