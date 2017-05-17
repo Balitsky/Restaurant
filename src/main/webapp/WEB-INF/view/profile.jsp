@@ -24,6 +24,7 @@
     </div>
     <div>
         <h1 style="font-color: #f9bb12">
+            <br>
             <fmt:message key="welcome" />
         </h1>
     </div>

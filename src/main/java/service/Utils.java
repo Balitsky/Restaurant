@@ -16,7 +16,7 @@ public class Utils {
         String language = request.getSession()
                 .getAttribute("language").toString();
         Locale locale = new Locale(language);
-        ResourceBundle rb = ResourceBundle.getBundle("property.messages",
+        ResourceBundle rb = ResourceBundle.getBundle("messages",
                 locale);
         return rb.getString(key);
     }

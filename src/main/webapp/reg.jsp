@@ -49,21 +49,21 @@
                     <fmt:message key="already_user"/>
                 </c:if>
             </h2>
-        </div>
+
         <form action="<c:url value="reg" />" method="post" enctype="multipart/form-data; charset=utf-8">
             <br>
-            <fmt:message key="login" />: <input type="text" name="login" class="css3login" value="${login}"/><br>
-            <fmt:message key="password" />: <input type="password" name="password" class="css3login" /><br>
-            <fmt:message key="confirm_password" />: <input type="password" name="confirm_password" class="css3login" /><br>
-            <fmt:message key="phone" />: <input type="text" name="phone" value="${phone}" class="css3login" />
+            <fmt:message key="login" />: <input id="l_inp" type="text" name="login" class="css3login" value="${login}"/><br>
+            <fmt:message key="password" />: <input id="p_inp" type="password" name="password" class="css3login" /><br>
+            <fmt:message key="confirm_password" />: <input id="cp_inp" type="password" name="confirm_password" class="css3login" /><br>
+            <fmt:message key="phone" />: <input id="ph_inp" type="text" name="phone" value="${phone}" class="css3login" />
             <span style="color: gray;"> (<fmt:message key="example" />:0993256678)</span><br>
-            <fmt:message key="email" />: <input type="text" name="email" value="${email}" class="css3login" /><br>
+            <fmt:message key="email" />: <input id="e_inp" type="text" name="email" value="${email}" class="css3login" /><br>
             <input type="submit" value="<fmt:message key="registration_submit" />" class="css3button" />
             <div id="back">
                 <a href="index.jsp"><fmt:message key="back_to_main" /></a>
             </div>
         </form>
-
+        </div>
     </div>
 </div>
 </body>

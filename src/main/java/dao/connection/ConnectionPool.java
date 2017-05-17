@@ -40,7 +40,7 @@ public class ConnectionPool {
         try {
             return new DaoConnection(connectionPool.getConnection());
         } catch (SQLException e) {
-            throw new DaoException("fail get dao.connection", e);
+            throw new DaoException("fail get dao connection", e);
         }
     }
 

@@ -32,6 +32,7 @@ value="/img/logo.jpg" />" width="50%"/>
     </div>
 
     <h1>
+        <br>
         <fmt:message key="welcome" />
     </h1>
 

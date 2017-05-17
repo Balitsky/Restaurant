@@ -7,6 +7,7 @@ import dao.factories.*;
 import model.Customer;
 import model.Order;
 import model.Product;
+import org.apache.log4j.Logger;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -17,10 +18,11 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 public class OrderMySQL implements OrderDao {
-
+private static Logger logger = Logger.getLogger(OrderDao.class);
     public boolean addOrder(Order order) {
         try (DaoConnection connection = TransactionHelper.getInstance().getConnection()) {
             TransactionHelper.getInstance().beginTransaction();
+            logger.warn("open transaction");
             PreparedStatement statement = connection.prepareStatement("INSERT INTO restaurant.order (total, id_customer) VALUES (?,?)",
                     PreparedStatement.RETURN_GENERATED_KEYS);
             statement.setInt(1, order.getTotal());
@@ -50,6 +52,7 @@ public class OrderMySQL implements OrderDao {
             }
 
             TransactionHelper.getInstance().commitTransaction();
+            logger.warn("transaction closed");
         } catch (SQLException e) {
             TransactionHelper.getInstance().rollbackTransaction();
             throw new DaoException("fail add order transaction", e);
